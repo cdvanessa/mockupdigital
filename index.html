@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock-Up en la era digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://posgrado.uwiener.edu.pe/wp-content/themes/web-posgrado-wiener/assets/images/logo_posgradouwiener_vf.svg" alt="Logo Universidad Norbert Wiener">
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <nav id="mobileNav">
+                <button class="nav-close" id="navClose">✕</button>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#resumen">Resumen</a></li>
+                    <li><a href="#metodologia">Metodología</a></li>
+                    <li><a href="#materiales">Materiales</a></li>
+                    <li><a href="#conclusiones">Conclusiones</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </header>
+
+    <section class="hero section" id="inicio">
+        <div class="neon-bg">
+            <div class="neon-circle neon-circle-1"></div>
+            <div class="neon-circle neon-circle-2"></div>
+            <div class="neon-circle neon-circle-3"></div>
+        </div>
+        <div class="container">
+            <h2><span class="gradient-text">Nuevas alternativas de Mock up en la era digital</span></h2>
+            <p>Comparativa de técnicas analógicas y digitales para la fabricación de mock-ups diagnósticos en odontología estética y restauradora.</p>
+            <a href="#metodologia" class="btn btn-primary">Conocer las técnicas</a>
+        </div>
+    </section>
+
+    <section class="section" id="resumen">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Resumen</h2>
+            </div>
+            <div class="summary-flow-image">Flujo de Resumen - Imagen del Proceso</div>
+            <p class="image-caption">Diagrama del flujo de trabajo para la creación de mock-ups dentales.</p>
+            <div class="card">
+                <div class="card-content">
+                    <p>La odontología estética ha evolucionado hacia un enfoque que privilegia la predictibilidad y la personalización. El mock-up es una herramienta clave en este proceso, permitiendo previsualizar los resultados estéticos antes de intervenir clínicamente.</p><br>
+                    <p>Con la digitalización, nuevas alternativas como la resina bisacrílica, la resina 3D impresa y el PMMA fresado mediante CAD/CAM han surgido, ofreciendo diferentes ventajas en precisión, estética y eficiencia. Mejora la comunicación paciente-clínico y optimiza la planificación estética y funcional.</p><br>
+
+                    <p>En esta mesa clínica se explicará la evaluación de cuatro técnicas de mock-up dental, dos con flujo digital parcial y dos con flujo digital completo. Cada técnica utilizó diferentes materiales y procesos para transferir el mock-up al paciente, variando entre impresión 3D, llaves de silicona, guías flexibles, fresado en PMMA y resinas biocompatibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="objetivos">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Objetivos</h2>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <ul class="custom-list">
+                        <li>Evaluar y comparar las nuevas alternativas digitales (fresado CAD/CAM e impresión 3D) para la fabricación de mock-ups diagnósticos en odontología estética y restauradora.</li>
+                        <li>Discutir las ventajas y desventajas de cada material y técnica en términos de precisión, eficiencia, estética, biocompatibilidad y costo.</li>
+                        <li>Presentar la aplicación clínica de los mock-ups digitales en la planificación de tratamientos estéticos mínimamente invasivos, como las carillas de porcelana.</li>
+                        <li>Destacar la importancia del mock-up como herramienta de comunicación entre el odontólogo, el paciente y el técnico dental, mejorando la predictibilidad de los resultados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section methodology" id="metodologia">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Metodología</h2>
+            </div>
+            <div class="technique-card card">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="tecnica1">Técnica 1</button>
+                    <button class="tab-btn" data-tab="tecnica2">Técnica 2</button>
+                    <button class="tab-btn" data-tab="tecnica3">Técnica 3</button>
+                    <button class="tab-btn" data-tab="tecnica4">Técnica 4</button>
+                </div>
+                <div id="tecnica1" class="tab-content active">
+                    <h3>Técnica 1 (Flujo digital parcial)</h3>
+                    <div class="technique-steps">
+                        <div class="step-images">
+                            <h4>Escaneo Intraoral y Facial</h4>
+                            <div class="image-grid two-images">
+                                <div>
+                                    <div class="technique-image">Escaneo Intraoral</div>
+                                    <p class="image-caption">Captura digital de la cavidad oral.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Escaneo Facial</div>
+                                    <p class="image-caption">Registro 3D de las características faciales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Diseño del Encerado Digital 3D</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Encerado Digital 3D</div>
+                                    <p class="image-caption">Modelo digital del diseño dental.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Impresión del Encerado</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Encerado Impreso</div>
+                                    <p class="image-caption">Impresión 3D del encerado digital.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Mock up con Bisacryl - Secuencia</h4>
+                            <div class="image-grid four-images">
+                                <div>
+                                    <div class="technique-image">Paso 1</div>
+                                    <p class="image-caption">Preparación inicial.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Paso 2</div>
+                                    <p class="image-caption">Aplicación de la llave de silicona.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Paso 3</div>
+                                    <p class="image-caption">Colocación de resina bisacrílica.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Paso 4</div>
+                                    <p class="image-caption">Ajuste final en boca.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Se lleva a cabo un encerado digital tridimensional utilizando el modelo obtenido mediante el escaneo intraoral del paciente. Posteriormente, este encerado es impreso empleando una resina específica para impresión 3D (Prizma Wide color beige; Makertech Labs). A continuación, se fabrica una llave de silicona (Zetalabor; Zhermack), que se utilizará para realizar en el paciente la prueba del mock-up aplicando resina bisacrílica (Luxatemp Star; DMG).</p>
+                    </div>
+                </div>
+                <div id="tecnica2" class="tab-content">
+                    <h3>Técnica 2 (Flujo digital parcial)</h3>
+                    <div class="technique-steps">
+                        <div class="step-images">
+                            <h4>Escaneo Intraoral y Facial</h4>
+                            <div class="image-grid two-images">
+                                <div>
+                                    <div class="technique-image">Escaneo Intraoral</div>
+                                    <p class="image-caption">Captura digital de la cavidad oral.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Escaneo Facial</div>
+                                    <p class="image-caption">Registro 3D de las características faciales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Diseño del Encerado Digital 3D</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Encerado Digital 3D</div>
+                                    <p class="image-caption">Modelo digital del diseño dental.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Impresión de la Guía</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Guía Impresa</div>
+                                    <p class="image-caption">Guía translúcida y flexible impresa en 3D.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Mock up con Guía Impresa - Secuencia</h4>
+                            <div class="image-grid four-images">
+                                <div>
+                                    <div class="technique-image">Paso 1</div>
+                                    <p class="image-caption">Preparación inicial.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Paso 2</div>
+                                    <p class="image-caption">Colocación de la guía impresa.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Paso 3</div>
+                                    <p class="image-caption">Aplicación de resina bisacrílica.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Paso 4</div>
+                                    <p class="image-caption">Ajuste final en boca.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>A partir del encerado digital 3D realizado en computadora, se diseña una guía, la cual se imprime utilizando resina Pryzma Bio Ortho IBT (Makertech Labs), caracterizada por ser translúcida y flexible. Esta guía, una vez impresa, se emplea en el paciente mediante un procedimiento convencional, aplicando resina bisacrílica para la prueba del mock-up (Luxatemp Star; DMG).</p>
+                    </div>
+                </div>
+                <div id="tecnica3" class="tab-content">
+                    <h3>Técnica 3 (Flujo digital completo)</h3>
+                    <div class="technique-steps">
+                        <div class="step-images">
+                            <h4>Escaneo Intraoral y Facial</h4>
+                            <div class="image-grid two-images">
+                                <div>
+                                    <div class="technique-image">Escaneo Intraoral</div>
+                                    <p class="image-caption">Captura digital de la cavidad oral.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Escaneo Facial</div>
+                                    <p class="image-caption">Registro 3D de las características faciales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Diseño del Encerado Digital 3D</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Encerado Digital 3D</div>
+                                    <p class="image-caption">Modelo digital del diseño dental.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Mock up Impreso</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Mock up Impreso 3D</div>
+                                    <p class="image-caption">Mock-up impreso directamente en 3D.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Aplicación - Antes y Después</h4>
+                            <div class="image-grid two-images">
+                                <div>
+                                    <div class="technique-image">Antes</div>
+                                    <p class="image-caption">Estado inicial del paciente.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Después</div>
+                                    <p class="image-caption">Resultado tras la aplicación del mock-up.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Se elabora un encerado digital, del cual se genera directamente un mock-up digital con su anatomía final. Se imprimió directamente en 3D utilizando una impresora 3D dental y una resina biocompatible para mock-ups (PriZma 3D Bio Crown Diamond; Makertech Labs). Una vez impreso, se prueba directamente en la boca del paciente, eliminando la necesidad de utilizar resina bisacrílica.</p>
+                    </div>
+                </div>
+                <div id="tecnica4" class="tab-content">
+                    <h3>Técnica 4 (Flujo digital completo)</h3>
+                    <div class="technique-steps">
+                        <div class="step-images">
+                            <h4>Escaneo Intraoral y Facial</h4>
+                            <div class="image-grid two-images">
+                                <div>
+                                    <div class="technique-image">Escaneo Intraoral</div>
+                                    <p class="image-caption">Captura digital de la cavidad oral.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Escaneo Facial</div>
+                                    <p class="image-caption">Registro 3D de las características faciales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Diseño del Encerado Digital 3D</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Encerado Digital 3D</div>
+                                    <p class="image-caption">Modelo digital del diseño dental.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Mock up Fresado</h4>
+                            <div class="image-grid one-image">
+                                <div>
+                                    <div class="technique-image">Mock up Fresado CAD/CAM</div>
+                                    <p class="image-caption">Mock-up fresado en PMMA mediante CAD/CAM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-images">
+                            <h4>Aplicación - Antes y Después</h4>
+                            <div class="image-grid two-images">
+                                <div>
+                                    <div class="technique-image">Antes</div>
+                                    <p class="image-caption">Estado inicial del paciente.</p>
+                                </div>
+                                <div>
+                                    <div class="technique-image">Después</div>
+                                    <p class="image-caption">Resultado tras la aplicación del mock-up.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Se elabora un encerado digital, del cual se genera directamente un mock-up digital. Este mock se fresó en PMMA utilizando una fresadora dental CAD/CAM y bloques de PMMA (Telio CAD; Ivoclar Vivadent), para luego ir directamente a boca del paciente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Evaluación</h3>
+                    <p>Los cuatro tipos de técnicas de mock-ups se probaron individualmente en la boca del paciente. Se evaluó la adaptación, la estética (color, forma, brillo, integración con los tejidos), la comodidad y la opinión subjetiva de la paciente sobre cada mock-up. Se tomaron fotografías y videos para documentar los resultados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Comparación de Resultados</h3>
+                    <div class="results-comparison">
+                        <div>
+                            <div class="result-image" style="background-image: url('images/resultado_tecnica_1_web.jpg'); background-size: cover; background-position: center;"></div>
+                            <p class="image-caption">Mock-up con resina bisacrílica.</p>
+                        </div>
+                        <div>
+                            <div class="result-image" style="background-image: url('images/resultado_tecnica_2_web.jpg'); background-size: cover; background-position: center;"></div>
+                            <p class="image-caption">Mock-up con guía impresa.</p>
+                        </div>
+                        <div>
+                            <div class="result-image" style="background-image: url('images/resultado_tecnica_3_web.jpg'); background-size: cover; background-position: center;"></div>
+                            <p class="image-caption">Mock-up impreso en 3D.</p>
+                        </div>
+                        <div>
+                            <div class="result-image" style="background-image: url('images/resultado_tecnica_4_web.jpg'); background-size: cover; background-position: center;"></div>
+                            <p class="image-caption">Mock-up fresado en PMMA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section materials" id="materiales">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Materiales</h2>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <table class="materials-table">
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Imagen</th>
+                                <th>Propiedades Mecánicas</th>
+                                <th>Ventajas</th>
+                                <th>Desventajas</th>
+                                <th>Usos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Resina bisacrílica (Luxatemp Star; DMG)</td>
+                                <td>
+                                    <div class="material-image" style="background-image: url('images/resina_1_bisacrilica.png'); background-size: cover; background-position: center;"></div>
+                                    <!-- <p class="image-caption">Resina Bisacrílica Luxatemp Star</p> -->
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Flexión: 127 MPa</li>
+                                        <li>Compresión: >300 MPa</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Excelente dureza, ajuste y adaptabilidad.</li>
+                                        <li>Estética excepcional y estabilidad en el color.</li>
+                                        <li>Rápida polimerización.</li>
+                                        <li>Resistencia a la fractura y alta flexibilidad.</li>
+                                        <li>Baja contracción.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Precio: Puede ser más costoso que otras resinas para provisionales.</li>
+                                    </ul>
+                                </td>
+                                <td>Mock-up provisional, restauraciones temporales de larga duración.</td>
+                            </tr>
+                            <tr>
+                                <td>Resina impresa 3D (Pryzma Bio Crown; Makertech Labs)</td>
+                                <td>
+                                    <div class="material-image" style="background-image: url('images/resina_2_impresion_3D.png'); background-size: cover; background-position: center;"></div>
+                                    <!-- <p class="image-caption">Resina Impresa 3D Pryzma Bio Crown</p> -->
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Flexión: >105.5 MPa</li>
+                                        <li>Tracción: 61.87 MPa</li>
+                                        <li>Dureza Shore D: 75-85</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Alta resistencia.</li>
+                                        <li>Fluorescencia natural.</li>
+                                        <li>Gran precisión y estabilidad de color.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Necesita postprocesado (lavado y curado).</li>
+                                        <li>Fragilidad si no se maneja bien.</li>
+                                    </ul>
+                                </td>
+                                <td>Provisionales de larga duración, coronas unitarias, carillas, inlays y onlays.</td>
+                            </tr>
+                            <tr>
+                                <td>Resina CAD/CAM (PMMA Telio CAD; Ivoclar)</td>
+                                <td>
+                                    <div class="material-image" style="background-image: url('images/pmma.png'); background-size: cover; background-position: center;"></div>
+                                    <!-- <p class="image-caption">Resina CAD/CAM PMMA Telio CAD</p> -->
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Flexión: 135 MPa</li>
+                                        <li>Módulo de elasticidad: >2800 MPa</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Excelente estabilidad dimensional.</li>
+                                        <li>Acabado altamente estético.</li>
+                                        <li>Alta durabilidad.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Costo elevado.</li>
+                                        <li>Mayor tiempo de fresado.</li>
+                                    </ul>
+                                </td>
+                                <td>Mock-up de larga duración, provisionales sobre implantes, puentes cortos.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Materiales y equipos utilizados</h3>
+                    <ul class="custom-list">
+                        <li><p>Resinas Bisacrílicas: Luxatemp Star; DMG.</p></li>
+                        <li><p>Resina para impresión de modelos 3D: Prizma Wide color beige; Makertech Labs.</p></li>
+                        <li><p>Resina para impresión de guía para mock up: Pryzma Bio Ortho IBT; Makertech Labs.</p></li>
+                        <li><p>Resinas para Impresión 3D: PriZma 3D Bio Crown; Makertech Labs.</p></li>
+                        <li><p>Resinas CAD/CAM (PMMA): Telio CAD; Ivoclar Vivadent</p></li>
+                        <li><p>Silicona para Matrices: Zetalabor, Zhermack</p></li>
+                        <li><p>Escáner Intraoral Medit i700</p></li>
+                        <li><p>Impresora 3D Halot Creality</p></li>
+                        <li><p>Impresora 3D de Resina Elegoo Mars 5 Ultra</p></li>
+                        <li><p>Fresadora Dental CAD/CAM Dentium</p></li>
+                        <li><p>Software de Diseño de Sonrisa Digital Exocad</p></li>
+                        <li><p>Modelos Preoperatorios Impresos en 3D</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="conclusiones">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Conclusiones</h2>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <ul class="custom-list">
+			<li>El avance tecnológico ha permitido perfeccionar el uso de mock-ups, logrando restauraciones cada vez más precisas, predecibles y estéticas. La elección del material dependerá de la necesidad clínica: rapidez y facilidad (bisacrílica), precisión y resistencia (resina 3D) o máxima estabilidad y estética (PMMA CAD/CAM).</li>
+			<li>La digitalización ha reducido la dependencia de la habilidad manual, mejorando la reproducibilidad y satisfacción del paciente.</li>
+		    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section references" id="referencias">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Referencias Bibliográficas</h2>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <ul class="reference-list">
+                        <li>Taha, D., Allam, S., & Morsi, T. (2024). Accuracy of computer-aided design trial restorations fabricated with different digital workflows. The Journal of prosthetic dentistry, 132(3), 578–585. <a href="https://doi.org/10.1016/j.prosdent.2023.09.034" target="_blank">https://doi.org/10.1016/j.prosdent.2023.09.034</a>.</li>
+                        <li>Koh, Y. S., Naidoo, N., & Petridis, H. (2025). Comparisons of analog and digital methods to produce an accurate trial restoration. The Journal of prosthetic dentistry, 133(2), 513–522. <a href="https://doi.org/10.1016/j.prosdent.2024.02.012" target="_blank">https://doi.org/10.1016/j.prosdent.2024.02.012</a>.</li>
+                        <li>Reshad, M., Cascione, D., & Magne, P. (2008). Diagnostic mock-ups as an objective tool for predictable outcomes with porcelain laminate veneers in esthetically demanding patients: a clinical report. The Journal of prosthetic dentistry, 99(5), 333–339. <a href="https://doi.org/10.1016/S0022-3913(08)00056-5" target="_blank">https://doi.org/10.1016/S0022-3913(08)00056-5</a>.</li>
+                        <li>Cattoni, F., Teté, G., Calloni, A. M., Manazza, F., Gastaldi, G., & Capparè, P. (2019). Milled versus moulded mock-ups based on the superimposition of 3D meshes from digital oral impressions: a comparative in vitro study in the aesthetic area. BMC Oral Health, 19(1), 230. <a href="https://doi.org/10.1186/s12903-019-0922-2" target="_blank">https://doi.org/10.1186/s12903-019-0922-2</a></li>
+                        <li>Lo Giudice, A., Ortensi, L., Farronato, M., Lucchese, A., Lo Castro, E., & Isola, G. (2020). The step further smile virtual planning: milled versus prototyped mock-ups for the evaluation of the designed smile characteristics. BMC Oral Health, 20(1), 335. <a href="https://doi.org/10.1186/s12903-020-01145-z" target="_blank">https://doi.org/10.1186/s12903-020-01145-z</a></li>
+                        <li>O’Connor Esteban, M., Riad Deglow, E., Zubizarreta-Macho, Á., & Hernández Montero, S. (2020). Influence of the Digital Mock-Up and Experience on the Ability to Determine the Prosthetically Correct Dental Implant Position during Digital Planning: An In Vitro Study. Journal of Clinical Medicine, 9(1), 48. <a href="https://doi.org/10.3390/jcm9010048" target="_blank">https://doi.org/10.3390/jcm9010048</a></li>
+                        <li>Li, Z., Ye, H., Bai, H., Zhao, Y., Wang, Y., Sun, Y., & Zhou, Y. (2022). Three-dimensional digital evaluation of thickness accuracy of mock-ups fabricated by silicone matrices: An in vitro study. Journal of prosthodontic research, 66(3), 445–451. <a href="https://doi.org/10.2186/jpr.JPR_D_20_00320" target="_blank">https://doi.org/10.2186/jpr.JPR_D_20_00320</a>.</li>
+                        <li>Allam, S. M. S. Y. H., Morsi, T. S., & Taha, D. T. S. (2023). Comparison of Dental Mock-ups manufactured by different techniques: Molded and Milled (an-in vitro study). Ain Shams Dental Journal, 30(2), 22–26.</li>
+                        <li>Askar, A., & El-Sharkawy, H. (2023). Comparison of Dental Mock-ups manufactured by different techniques: Molded and Milled (an in vitro study). Alexandria Scientific Dental Journal, 44(2), 123-130. <a href="https://doi.org/10.1016/j.asdj.2023.01.001" target="_blank">https://doi.org/10.1016/j.asdj.2023.01.001</a>.</li>
+                        <li>Segundo, Â. R. T. C., Saraiva, S., de Castro, C., Sesma, N., Bohner, L., Andretti, F. L., & Coachman, C. (2023). CAD-CAM natural restorations-Reproducing nature using a digital workflow. Journal of esthetic and restorative dentistry, 35(7), 993–1000. <a href="https://doi.org/10.1111/jerd.13028" target="_blank">https://doi.org/10.1111/jerd.13028</a>.</li>
+                        <li>Ortensi, L., Lo Castro, E., Rapisarda, E., & Pedullà, E. (2020). Accuracy of trial restorations from virtual planning: A comparison of two fabrication techniques. The Journal of Prosthetic Dentistry, 124(6), 758-763. <a href="https://doi.org/10.1016/j.prosdent.2020.08.040" target="_blank">https://doi.org/10.1016/j.prosdent.2020.08.040</a></li>
+                        <li>Jeong, Y. G., Lee, W. S., & Lee, K. B. (2018). Accuracy evaluation of dental models manufactured by CAD/CAM milling method and 3D printing method. The journal of advanced prosthodontics, 10(3), 245–251. <a href="https://doi.org/10.4047/jap.2018.10.3.245" target="_blank">https://doi.org/10.4047/jap.2018.10.3.245</a></li>
+                        <li>Kouri, V., Moldovani, D., & Papazoglou, E. (2023). Accuracy of Direct Composite Veneers via Injectable Resin Composite and Silicone Matrices in Comparison to Diagnostic Wax-Up. Journal of functional biomaterials, 14(1), 32. <a href="https://doi.org/10.3390/jfb14010032" target="_blank">https://doi.org/10.3390/jfb14010032</a>.</li>
+                        <li>Chisnoiu, A. M., Staicu, A. C., Kui, A., Chisnoiu, R. M., Iacob, S., Fluerașu, M., & Buduru, S. (2023). Smile Design and Treatment Planning-Conventional versus Digital-A Pilot Study. Journal of personalized medicine, 13(7), 1028. <a href="https://doi.org/10.3390/jpm13071028" target="_blank">https://doi.org/10.3390/jpm13071028</a>.</li>
+                        <li>Kim, S. Y., Shin, Y. S., Jung, H. D., Hwang, C. J., Baik, H. S., & Cha, J. Y. (2018). Precision and trueness of dental models manufactured with different 3-dimensional printing techniques. American Journal of Orthodontics and Dentofacial Orthopedics, 153(1), 144-153. <a href="https://doi.org/10.1016/j.ajodo.2017.05.025" target="_blank">https://doi.org/10.1016/j.ajodo.2017.05.025</a>.</li>
+                        <li>Lin, W. S., Zandinejad, A., Metz, M. J., Harris, B. T., & Morton, D. (2015). Predictable restorative workflow for computer-aided design/computer-aided manufacture-fabricated ceramic veneers utilizing a virtual smile design principle. Operative Dentistry, 40(4), 357-363. <a href="https://doi.org/10.2341/13-295-S" target="_blank">https://doi.org/10.2341/13-295-S</a>.</li>
+                        <li>Magne, P., & Belser, U. C. (2004). Novel Porcelain Laminate Preparation Approach Driven by a Diagnostic Mock-up. Journal of Esthetic and Restorative Dentistry, 16(1), 7-16. <a href="https://doi.org/10.1111/j.1708-8240.2004.tb00444.x" target="_blank">https://doi.org/10.1111/j.1708-8240.2004.tb00444.x</a>.</li>
+                        <li>Jurado, C. A., Parachuru, V., Villalobos Tinoco, J., Guzman-Perez, G., Tsujimoto, A., Javvadi, R., & Afrashtehfar, K. I. (2022). Diagnostic Mock-Up as a Surgical Reduction Guide for Crown Lengthening: Technique Description and Case Report. Medicina, 58(10), 1360. <a href="https://doi.org/10.3390/medicina58101360" target="_blank">https://doi.org/10.3390/medicina58101360</a>.</li>
+                        <li>Miranda, M. E., Olivieri, K. A., Rigolin, F. J., & de Vasconcellos, A. A. (2016). Esthetic challenges in rehabilitating the anterior maxilla: A case report. Operative Dentistry, 41(1), 2-7.1. <a href="https://doi.org/10.2341/14-269-S" target="_blank">https://doi.org/10.2341/14-269-S</a>.</li>
+                        <li>Ting-shu, & Jian. (2015). Intraoral Digital Impression Review. Journal of Prosthodontics, 24(4), 313–321. <a href="https://doi.org/10.1111/jopr.12218" target="_blank">https://doi.org/10.1111/jopr.12218</a></li>
+                    </ul>
+                    <a href="#" id="verMasBtn" class="btn btn-outline">Ver más referencias</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="equipo">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Equipo de Investigación</h2>
+            </div>
+            <div class="team-grid team-grid-four">
+                <div class="team-member">
+                    <div class="team-photo" style="background-image: url('images/Residente_1_Vanessa_Andrade.jpg'); background-size: cover; background-position: center;"></div>
+                    <!-- <p class="image-caption">CD. Andrade Neyra, Vanessa</p> -->
+                    <h3>CD. Andrade Neyra, Vanessa</h3>
+                    <p>Post Grado Segunda Especialidad en Odontología Restauradora y Estética</p>
+                    <div class="contact-buttons">
+                        <button class="contact-btn">📧 Email</button>
+                        <button class="contact-btn">💬 WhatsApp</button>
+                        <button class="contact-btn">💼 LinkedIn</button>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo" style="background-image: url('images/Residente_2_Joel_Izquierdo.jpg'); background-size: cover; background-position: center;"></div>
+                    <!-- <p class="image-caption">CD. Izquierdo Taipe, Joel Bernardo</p> -->
+                    <h3>CD. Izquierdo Taipe, Joel Bernardo</h3>
+                    <p>Post Grado Segunda Especialidad en Odontología Restauradora y Estética</p>
+                    <div class="contact-buttons">
+                        <button class="contact-btn">📧 Email</button>
+                        <button class="contact-btn">💬 WhatsApp</button>
+                        <button class="contact-btn">💼 LinkedIn</button>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo" style="background-image: url('images/Residente_3_Luis_Tenazoa.jpg'); background-size: cover; background-position: center;"></div>
+                    <!-- <p class="image-caption">CD. Tenazoa Paredes, Junior Luis</p> -->
+                    <h3>CD. Tenazoa Paredes, Junior Luis</h3>
+                    <p>Post Grado Segunda Especialidad en Odontología Restauradora y Estética</p>
+                    <div class="contact-buttons">
+                        <button class="contact-btn">📧 Email</button>
+                        <button class="contact-btn">💬 WhatsApp</button>
+                        <button class="contact-btn">💼 LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+            <div class="advisor-section">
+                <div class="team-member advisor">
+                    <div class="team-photo" style="background-image: url('images/Asesor_1_Milton_Villanueva.jpg'); background-size: cover; background-position: center;"></div>
+                    <!-- <p class="image-caption">Mg. CD. Milton Villanueva Valenzuela</p> -->
+                    <h3>Mg. CD. Milton Villanueva Valenzuela</h3>
+                    <p>Asesor</p>
+                    <div class="contact-buttons">
+                        <button class="contact-btn">📧 Email</button>
+                        <button class="contact-btn">💬 WhatsApp</button>
+                        <button class="contact-btn">💼 LinkedIn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Post Grado Segunda Especialidad en Odontología Restauradora y Estética</p>
+            <p>Universidad Norbert Wiener</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>XII CONGRESO INTERNACIONAL DE REHABILITACIÓN ORAL</p>
+        </div>
+    </footer>
+</body>
+</html>
